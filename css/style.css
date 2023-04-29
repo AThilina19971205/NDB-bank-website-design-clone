@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.font-regular{
+    font-family: "antenna-medium";
+    font-size: 13px;
+}
+#menu{
+    background-color: rgb(0, 0, 0);
+}
+#menu-container{
+    height: 44px;
+    margin: 0 114px 0 25px;
+}
+#menu-container>ul{
+    display: flex;
+    
+}
+#menu-container>ul li{
+    margin: 0 17px;
+    padding: 15px 0;
+}
+#menu-container>ul li>a{
+    color: white;
+    text-decoration: none;
+}
+#search-icon-img{
+    color: white;
+    font-size: 16px;
+}
