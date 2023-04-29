@@ -4,7 +4,7 @@
 body{
     font-family: "antenna-medium";
 }
-/* Top-Menu */
+/* Top-Menu ....................................................................................*/
 #menu{
     background-color:#231F20;
 }
@@ -36,7 +36,7 @@ body{
 #search-icon-img:hover{
     cursor: pointer;
 }
-/* Top-Nav-bar */
+/* Top-Nav-bar .................................................................................*/
 nav{
     height: 90px;
     background-color:#d50f0e;
@@ -79,11 +79,28 @@ nav{
     border-radius: 25px;
 
 }
+#ndb-logo{
+    animation-name: logo-annimation;
+    animation-duration: 1.5S;
+    /* animation-iteration-count:infinite ; */
+}
+@keyframes logo-annimation{
+    from{
+        transform: translateX(450px);
+
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+/* img-container....................................................................................... */
 #img-container>img{
     width: 100%;
     height: 450px;
 }
-/* Features container */
+
+/* Features container ...................................................................................*/
 .feat-cont{
     display: flex;
     justify-content: space-evenly;
@@ -94,6 +111,19 @@ nav{
     /* border: 1px solid black; */
     width: 300px;
     margin: 30px;
+    animation-name: bottom-to-top;
+    animation-duration: 1.5S;
+    /* animation-iteration-count:infinite ; */
+}
+@keyframes bottom-to-top{
+    from{
+        transform: translateY(250px);
+
+    }
+    to{
+        transform: translateY(0);
+    }
+    
 }
 .feat-cont>div>a{
     display: flex;
@@ -112,14 +142,66 @@ nav{
 
 }
 .feat-cont>div:hover .img{
-  scale: 1.1;
-
-    
-    
+  scale: 1.1;  
 }
 .feat-cont>div>a>h4{
     padding: 0 10px;
     
 }
+/* social-media ..........................................................................*/
+#social-media{
+    position: fixed;
+    top: 35%;
+}
+#social-media>li{
+    font-size: 30px;
+    padding: 5px;
+    width: 45px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+}
+#social-media>li:hover{
+    width: 50px;
+}
+#social-media>li:hover .scale-up{
+    margin-left: 10px;
+}
+#fb-icon{
+    color: #39579A;
+}
+#in-icon{
+    color: #007BB6;
+}
+#insta-icon{
+    color:  #A728A8;
+}
+#youtube-icon{
+    color: #E92A1D;
+}
+#twiter-icon{
+    color:  #1DA8E2;
+}
+/* floating-menu ..........................................................................*/
+#floating-menu{
+    position: fixed;
+    top: 35%;
+    right: 0;
+    /* border: 1px solid; */
+}
+#floating-menu>ul>li{
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgrey;
+    padding: 10px;
+
+}
+#floating-menu>ul>li:last-child{
+    border-bottom: 1px solid lightgray;
+}
+#floating-menu>ul>li>img{
+    /* padding: 5px; */
+    /* background-color: #1DA8E2; */
+
+}
+
 
 
